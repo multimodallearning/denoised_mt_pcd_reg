@@ -1,0 +1,32 @@
+EXPERIMENT_NAME: 'rigid_to_real/ours'
+NUM_WORKERS: 8
+DEVICE: 'cuda'
+MODEL:
+  WEIGHTS: 'trained_models/def=rigid_pretrain_student.pth'
+  TEACHER_WEIGHTS: 'trained_models/def=rigid_pretrain_teacher.pth'
+SOLVER:
+  BATCH_SIZE: 4
+  NUM_EPOCHS: 140
+  LEARNING_RATE: 0.001
+  SCHEDULER: 'multistep'
+  LR_LAMBDA: 0.1
+  LR_MILESTONES: []
+  CHECKPOINT_INTERVAL: 10
+  LOSS_FACTOR: 10.
+DA:
+  METHOD: 'mt_cls_gen_joint'
+  MT_ROT: 5.
+  MT_SCALE: 0.05
+  MT_TRANSL: 0.002
+  MT_TEACHERALPHA: 0.996
+  MT_PLFILTERMETHOD: 'chamfer_select'
+INPUT:
+  NUM_POINTS_SMALL: 8192
+  NUM_POINTS_LARGE: 16384
+  SCALE_NORM_FACTOR: 100
+AUGMENTATIONS:
+  METHOD: 'rigid'
+  RANDOM_SEED: -1
+  MAX_ROTATION_ANGLE: 10.
+  MAX_SCALE_OFFSET: 0.1
+  MAX_TRANSLATION: 0.005
