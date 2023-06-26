@@ -1,4 +1,4 @@
-# denoised_reg_mt
+# denoised_mt_pcd_reg
 Source code for our Miccai2023 paper 'A denoised Mean Teacher for domain adaptive point cloud registration'.
 
 ## Dependencies
