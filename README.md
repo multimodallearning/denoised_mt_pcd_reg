@@ -55,6 +55,17 @@ Then, you need to compile the `pointnet2_utils` via `cd pointnet2`, `python setu
 ## Testing
 * You can test the model by executing `python test.py --config-file PATH/TO/CONFIG.yaml --model-path PATH/TO/MODEL.pth`. Our pretrained models are provided in the `trained_models` directory.
 
+## Citation
+If you find our code useful for your work, please cite the following paper
+```latex
+@article{bigalke2023denoised,
+  title={A denoised Mean Teacher for domain adaptive point cloud registration},
+  author={Bigalke, Alexander and Heinrich, Mattias P},
+  journal={arXiv preprint arXiv:2306.14749},
+  year={2023}
+}
+```
+
 ## Acknowledgements
 * Code for data pre-processing has been adapted from https://github.com/uncbiag/robot
 * Code for the PointPWC-Net has been adapted from https://github.com/DylanWusee/PointPWC
