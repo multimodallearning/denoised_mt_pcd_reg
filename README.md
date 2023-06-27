@@ -1,5 +1,5 @@
 # denoised_mt_pcd_reg
-Source code for our Miccai2023 paper 'A denoised Mean Teacher for domain adaptive point cloud registration'.
+Source code for our Miccai2023 paper [A denoised Mean Teacher for domain adaptive point cloud registration](https://arxiv.org/abs/2306.14749) [[pdf](https://arxiv.org/pdf/2306.14749.pdf)].
 
 ## Dependencies
 Please first install the following dependencies
